@@ -1,0 +1,6 @@
+*from github to vscode(do this in vscode terminal)
+    ->git clone "LINK": creates a folder(link) in vscode from github
+    ->git status: checks whether a file is saved or not
+    ->cd .. : changes to default directory
+    ->cd "folder_name": changes to folder repository
+    ->git add "file name": adds the file created in vscode gi
