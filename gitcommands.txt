@@ -3,4 +3,51 @@
     ->git status: checks whether a file is saved or not
     ->cd .. : changes to default directory
     ->cd "folder_name": changes to folder repository
-    ->git add "file name": adds the file created in vscode gi
+    ->git add "file name": adds the file created and modifications done
+      in vscode to staging area
+    ->git commit -m "store ur progress": gives an idea of what we did & 
+      takes the file from staging area to local git folder in finder
+    ->git push origin main: here,origin refers to the link at the first 
+      line,main refers to the branch.
+    ->>>if u deleted a file in vsc then to make a change in gith u must 
+        do -add- -commit- -push-
+    ->git pull: when we create changes in gith use this to brings those 
+      changes to vsc(very imp)
+*from local git folder to vsc
+    ->>>automatically shows the folder created in local git folder to vsc
+    ->git init: converts the folder into a gith repository(but first in the 
+      terminal u must type this while keeping ur desired folder as directory)
+    ->git add . :if u have a lot of untracked files in the folder then do this 
+      to take all the files to the staging area
+    ->git remote add origin "link when new repository is created": we can't do
+      'git push origin main' here bcz origin is not defined. so first create a 
+      new repository with the same name of the folder and paste its link in the 
+      command
+**EXTRAS
+    ->>cd : takes you back to beginning
+    ->>ls : shows all drives and folders
+    ->>use "tab" after just typing the first letters of the folder u want to open
+       as directory(cd ....). this will auto fill thus help u to open easily
+*continue
+    ->git branch : shows us what is the name of the branch (such as 'master','main',etc.)
+      actually master is the new rename of main.
+    ->>>if u did "git push origin main" here(where u saw branch is master by typing 
+        "git branch")it creates an error.so we can use
+        ->git push origin master [or]
+        ->git branch -M main : this renames master as main
+          git push origin main
+        ->git branch -a : tells us what branches are there for the given repository
+          (first select what folder/repo. u want to check)
+**In github
+    ->>we can create a new branch (go git pull so that the new branch created is shown 
+       in vsc)
+*continue
+    ->git checkout "new branch" : changes the present branch to the new branch
+    ->>>if we created a new file in the new branch, then do the same for 'add'
+        and 'commit' but do " git push origin 'new branch' "
+    ->>>u can notice that if i checkout to main branch the new file gets disappeared
+        in vsc and comes back after we checkout to new branch
+        "" THE MAIN REASON TO DO THIS IS for eg:: in a corporate team of 5 people
+           each person creates a separate branch from the main branch and do their
+           tasks in it. they later submit it by checking out to main branch""
+    
