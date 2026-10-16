@@ -28,10 +28,12 @@
     ->>ls : shows all drives and folders
     ->>use "tab" after just typing the first letters of the folder u want to open
        as directory(cd ....). this will auto fill thus help u to open easily
+    ->>clear : removes all commands (opens a fresh page)
 *continue
     ->git branch : shows us what is the name of the branch (such as 'master','main',etc.)
       actually master is the new rename of main.
-    ->>>if u did "git push origin main" here(where u saw branch is master by typing 
+    ->git branch "new_branch" : creates a new branch 
+        ->>>if u did "git push origin main" here(where u saw branch is master by typing 
         "git branch")it creates an error.so we can use
         ->git push origin master [or]
         ->git branch -M main : this renames master as main
@@ -39,7 +41,7 @@
         ->git branch -a : tells us what branches are there for the given repository
           (first select what folder/repo. u want to check)
 **In github
-    ->>we can create a new branch (go git pull so that the new branch created is shown 
+    ->>we can create a new branch (do git pull so that the new branch created is shown 
        in vsc)
 *continue
     ->git checkout "new branch" : changes the present branch to the new branch
@@ -50,4 +52,8 @@
         "" THE MAIN REASON TO DO THIS IS for eg:: in a corporate team of 5 people
            each person creates a separate branch from the main branch and do their
            tasks in it. they later submit it by checking out to main branch""
-    
+    ->git diff "new branch" : tells us what files are in new branch but not in the 
+      branch which is curently open(i.e., checkout branch)
+    ->git merge "new branch" : merges the new branch to the currrently checkout branch
+    ->>>REMINDER: always do "git push ....." so that they go to github
+    ->
